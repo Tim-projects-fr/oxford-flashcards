@@ -593,8 +593,7 @@ function showCard() {
     if (mode === 'review') {
       document.getElementById('empty-icon').textContent  = '✅';
       document.getElementById('empty-title').textContent = 'Tout est bon !';
-      document.getElementById('empty-sub').textContent   = 'Tu n'as aucun mot à revoir pour aujourd'hui.
-Reviens après ta session du jour.';
+      document.getElementById('empty-sub').textContent   = "Tu n'as aucun mot à revoir pour aujourd'hui.Reviens après ta session du jour.";
     } else if (mode === 'favorites') {
       document.getElementById('empty-icon').textContent  = '⭐';
       document.getElementById('empty-title').textContent = 'Pas de favoris';
@@ -708,8 +707,7 @@ function showComplete() {
     document.getElementById('c-icon').textContent  = '🌟';
     document.getElementById('c-title').textContent = 'Session du jour terminée !';
     document.getElementById('c-sub').textContent   =
-      'Reviens demain pour 30 nouveaux mots.
-' + knownTotal + ' mots maîtrisés au total.';
+      'Reviens demain pour 30 nouveaux mots.' + knownTotal + ' mots maîtrisés au total.';
     btns.innerHTML = reviewCount > 0
       ? '<button class="complete-btn review-btn" onclick="goToReview()">🔄 Revoir les ' + reviewCount + ' mot' + (reviewCount>1?'s':'') + ' à revoir</button>'
         + '<button class="complete-btn secondary" onclick="restartSession()">↺ Revoir la session</button>'
