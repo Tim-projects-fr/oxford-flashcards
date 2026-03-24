@@ -706,8 +706,7 @@ function showComplete() {
   if (mode === 'day') {
     document.getElementById('c-icon').textContent  = '🌟';
     document.getElementById('c-title').textContent = 'Session du jour terminée !';
-    document.getElementById('c-sub').textContent   =
-      'Reviens demain pour 30 nouveaux mots.' + knownTotal + ' mots maîtrisés au total.';
+    document.getElementById('c-sub').textContent='Reviens demain pour 30 nouveaux mots. '+knownTotal+' mots maitrises au total.';
     btns.innerHTML = reviewCount > 0
       ? '<button class="complete-btn review-btn" onclick="goToReview()">🔄 Revoir les ' + reviewCount + ' mot' + (reviewCount>1?'s':'') + ' à revoir</button>'
         + '<button class="complete-btn secondary" onclick="restartSession()">↺ Revoir la session</button>'
